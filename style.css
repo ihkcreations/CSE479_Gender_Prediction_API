@@ -1,0 +1,121 @@
+*{
+    font-family: "Poppins", sans-serif;;
+}
+
+
+
+body {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #103015;
+    color: #d3f1e2;
+}
+
+
+.container {
+    background-color: #246441;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    /* text-align: center; */
+    width: 90%;
+    max-width: 550px;
+}
+
+
+h1 {
+    color: #23da7e;
+    margin-bottom: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: #23da7e;
+    font-weight: bold;
+    transition: 0.3s all;
+}
+
+a:hover {
+    color: #27af6b;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+#nameInput {
+    flex-grow: 1;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+#nameInput:focus {
+    border-color: #3498db;
+}
+
+#submitBtn {
+    padding: 12px 20px;
+    background-color: #23da7e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#submitBtn:hover {
+    background-color: #27af6b;
+}
+
+#submitBtn:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+}
+
+#result {
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 5px;
+    min-height: 100px; /* To prevent layout jump */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: background-color 0.5s ease;
+}
+
+#result p {
+    margin: 2px 0;
+    font-size: 18px;
+}
+
+#result .name {
+    font-weight: bold;
+    font-size: 22px;
+    text-transform: capitalize;
+}
+
+#result .gender {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.male { background-color: #e0f7fa; color: #00796b; } /* Light teal */
+.female { background-color: #fce4ec; color: #c2185b; } /* Light pink */
+.unknown { background-color: #eeeeee; color: #555; } /* Light grey */
+.loading { background-color: #f0f0f0; color: #777; }
+
+.error {
+    color: #e74c3c;
+    font-weight: bold;
+}
